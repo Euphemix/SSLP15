@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Su Shi Life Map</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <style>
+      #map {
+        height: 100vh;
+      }
+      body {
+        margin: 0;
+        font-family: sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script>
+      const map = L.map("map").setView([30.0, 112.0], 5);
+
+      L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        maxZoom: 10,
+        attribution: "&copy; OpenStreetMap contributors",
+      }).addTo(map);
+
+      const locations = [
+        {
+          name: "Meishan, Sichuan",
+          lat: 30.057,
+          lon: 103.831,
+          title: "Early Years and Entry into Officialdom (1037–1067)",
+          detail:
+            "Born in 1037; passed the imperial exam in 1057; appointed to Fengxiang Prefecture; father died in 1061; grounded in classical learning.",
+        },
+        {
+          name: "Mizhou (now Shandong)",
+          lat: 36.233,
+          lon: 119.417,
+          title: "Political Success and Literary Peak (1068–1079)",
+          detail:
+            "Held various posts; performed well in office; opposed Wang Anshi's reform; gradually marginalized.",
+        },
+        {
+          name: "Huangzhou (now Huanggang, Hubei)",
+          lat: 30.45,
+          lon: 114.87,
+          title: "First Exile — Huangzhou Period (1080–1086)",
+          detail:
+            "Exiled due to the 'Crow Terrace Poem Case'; appointed as a minor official with no real power.",
+        },
+        {
+          name: "Danzhou, Hainan",
+          lat: 19.52,
+          lon: 109.58,
+          title: "Later Exile in the South (1087–1100)",
+          detail:
+            "Exiled again due to political views; lived in Huizhou and Danzhou.",
+        },
+        {
+          name: "Changzhou, Jiangsu",
+          lat: 31.81,
+          lon: 119.97,
+          title: "Return North and Death (1100–1101)",
+          detail:
+            "Reunited briefly with his brother Su Zhe; died at the age of 64.",
+        },
+      ];
+
+      const polylinePoints = [];
+      locations.forEach((loc) => {
+        L.marker([loc.lat, loc.lon])
+          .addTo(map)
+          .bindPopup(
+            `<b>${loc.title}</b><br><i>${loc.name}</i><br>${loc.detail}`
+          );
+        polylinePoints.push([loc.lat, loc.lon]);
+      });
+
+      const polyline = L.polyline(polylinePoints, {
+        color: "blue",
+        weight: 4,
+        opacity: 0.7,
+        dashArray: "5, 10",
+      }).addTo(map);
+
+      map.fitBounds(polyline.getBounds());
+    </script>
+  </body>
+</html>

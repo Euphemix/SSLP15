@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <title>诗歌分析布局</title>
+    <style>
+      body {
+        font-family: "STKaiti", serif;
+        /* background-color: #fefaf1; */
+        padding: 20px;
+      }
+
+      .section {
+        /* border: 2px solid red; */
+        /* border-bottom: 5px solid #63763c;
+        border-radius: 10%; */
+        margin: 10px 0;
+        padding: 10px;
+        /* background-color: #ffb303; */
+        color: rgb(0, 0, 0);
+        text-align: center;
+        font-size: 1.2rem;
+        /* background-color: #8b6f4d; */
+        font-weight: bold;
+        font-family: "Helvetica Neue", Arial, sans-serif;
+      }
+
+      .row {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        align-items: center;
+      }
+
+      .row2 {
+        border-top: 3px solid #63763c;
+        border-bottom: 3px solid #63763c;
+      }
+
+      .row1 .section {
+        flex: 1;
+        /* border: #63763c solid 2px;
+        height: 100%; */
+      }
+      .row .section-a {
+        /* border-bottom: 5px solid #63763c; */
+        border-radius: 20px;
+        /* background-color: #63763c;
+        color: aliceblue; */
+        color: #63763c;
+        /* flex: 1; */
+      } /* 两倍宽度 */
+      .row .section-b {
+        /* flex: 2; */
+        font-size: 1rem;
+        /* border-bottom: 5px solid #63763c; */
+      } /* 一倍宽度 */
+      .row .section-c {
+        /* border-radius: 20px;
+        background-color: #63763c;
+        color: aliceblue; */
+        /* flex: 2; */
+        color: #63763c;
+        font-size: 1.2rem;
+      } /* 一倍宽度 */
+
+      .row3 {
+        border-bottom: #4b7f8b solid 4px;
+      }
+
+      .section-d {
+        border-radius: 20px;
+        background-color: #dcbbbb;
+        /* color: #4B7F8B; */
+        padding: 20px;
+        margin: 20px;
+        font-size: 1.5rem;
+      }
+
+      .section-g {
+        font-size: 1rem;
+      }
+
+      .row1 {
+        /* border:2px solid #63763c; */
+        background-color: #eee4ca;
+        padding: 10px;
+        margin-bottom: 20px;
+        border-radius: 20px;
+      }
+
+      /* .row1 img{
+        width: 620px;
+       } */
+
+      .title {
+        font-size: 2rem;
+        font-weight: bold;
+        color: black;
+      }
+
+      .subtitle {
+        font-size: 1.5rem;
+        /* color: red; */
+        margin-bottom: 20px;
+      }
+
+      .area-title {
+        padding: 5px;
+        border-radius: 6px;
+        color: white;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="row row2">
+      <div class="section section-a">HUBEI</div>
+      <div class="section section-b">
+        After the Wutai poetry case, Huangzhou was degraded; The officer is the
+        deputy envoy of the regimental training; No real power.
+      </div>
+      <div class="section section-c">
+        Open-minded and free-spirited, happy in suffering.
+      </div>
+    </div>
+
+    <div class="section section-d">
+      Poetry style: Nature and philosophical reflection blend; the peak of art.
+    </div>
+
+    <div class="row1">
+      <div class="row row3">
+        <div class="section section-e">
+          《定风波·莫听穿林打叶声》<br />
+          莫听穿林打叶声，何妨吟啸且徐行。<br />
+          竹杖芒鞋轻胜马，谁怕？一蓑烟雨任平生<br />
+          料峭春风吹酒醒，微冷，山头斜照却相迎。<br />
+          回首向来萧瑟处，也无风雨也无晴。
+        </div>
+        <div class="section section-f">
+          <i
+            >Fixed Storm·Don't Listen to the Sound of Breaking through the
+            Forest and Striking Leaves </i
+          ><br /><br />
+          Pay no mind to leaves struck by forest rain—Sing, walk slow, let
+          nature remain.<br />
+          My cane and straw shoes outmatch the steed,Why fear? Cloaked in mist
+          and rain, I go as I please.<br />
+          A chilly spring breeze sobers my wine,faint sunlight greets me from
+          the ridge-line.<br />
+          Looking back at that bleak old place—Neither storm nor shine leaves a
+          lasting trace.
+        </div>
+        <div class="section section-g">
+          <img style="width: 350px" src="P3_1.jpg" alt="" />
+        </div>
+      </div>
+      <div class="section section-g">
+        During his exile in Huangzhou, Su Shi faced adversity with an
+        open-minded attitude toward the changes of nature's storms and winds.
+        His creative mindset is reflected in: transcending the storms and winds,
+        inner tranquility, and approaching life's adversities with a composed
+        demeanor. In terms of art, the language is fresh and refined, the
+        composition is simple and natural, expressing a sense of transcendent
+        and boundless openness. The themes revolve around "philosophy, social
+        conduct, and natural transformation," with an overall emotional
+        inclination toward boundlessness and composure.
+      </div>
+    </div>
+
+    <div class="row1">
+      <div class="row row3">
+        <div class="section section-e">
+          《念奴娇·赤壁怀古》<br />
+          大江东去，浪淘尽，千古风流人物。<br />
+          故垒西边，人道是、三国周郎赤壁。<br />
+          乱石穿空，惊涛拍岸，卷起千堆雪。<br />
+          江山如画，一时多少豪杰。<br />
+          遥想公瑾当年，小乔初嫁了，雄姿英发。<br />
+          羽扇纶巾，谈笑间、樯橹灰飞烟灭。<br />
+          故国神游，多情应笑我，早生华发。<br />
+          人生如梦，一尊还酹江月。
+        </div>
+        <div class="section section-f">
+          <i
+            >Remembrance of the Beautiful Concubine·Nostalgia for the Red
+            Cliff</i
+          ><br /><br />
+          The great river flows eastward, Waves washing away all heroes of time
+          past.<br />
+          By the western ramparts, People say: Here was Red Cliff of young Zhou
+          Yu.<br />
+          The old monk’s tomb stands new and high, Jagged rocks pierce the sky,
+          Angry waves crash the shore, Churning snowy foam in heaps. The
+          landscape, like a painting—how many heroes once starred!<br />
+          I think of Zhou Yu back then, Newly wed to Xiao Qiao, youthful, grand
+          in spirit.<br />
+          With feathered fan and silk cap, He laughed as enemy ships burned to
+          ashes.<br />
+          Now, I roam this old land— My wistful heart laughs at me, my hair
+          already gray.<br />
+          Life is but a dream— Let me pour a libation to the river moon.
+        </div>
+        <div class="section section-g">
+          <img style="width: 350px" src="P3_2.jpg" alt="" />
+        </div>
+      </div>
+      <div class="section section-g">
+        In the period of "Sub-relegation-Huangzhou Period (1080 - 1086)", Su Shi
+        wrote" Remembrance of the Beautiful Concubine·Nostalgia for the Red
+        Cliff", which expressed his admiration for history and heroes and his
+        meditation on life through the ancient battlefield Chibi nostalgia. His
+        creative mood is expressed as: standing at the height of history,
+        looking back, writing the vicissitudes of the world with the face of the
+        wind and cloud. In art, the use of allusions, antithesis neat, situation
+        integration, reflecting romantic pride. The theme revolves around
+        "history, hero, ideal and loss", and the overall emotional tendency is
+        strong and intense.
+      </div>
+    </div>
+    <div class="row1">
+      <div class="row row3">
+        <div class="section section-e">
+          《赤壁赋》<br />
+          寄蜉蝣于天地，渺沧海之一粟.
+        </div>
+        <div class="section section-f">
+          <i>Former Ode on the Red Cliffs</i><br /><br />
+          I am like a mayfly in the vast universe,<br />
+          A grain of millet in the sea.
+        </div>
+        <div class="section section-g">
+          <img style="width: 350px" src="P3_3.jpg" alt="" />
+        </div>
+      </div>
+      <div class="section section-g">
+        In the period of "Sub-relegation-Huangzhou Period (1080 - 1086)", Su Shi
+        wrote "Former Ode on the Red Cliffs", which was composed for Huangzhou
+        Chibi Fu, and triggered philosophical thinking on history, life and
+        nature through ancient battlefields. His creative mood is manifested as:
+        Intending to inquire into the relationship between history, nature and
+        life, showing philosophical feelings. In art, the structure is rigorous,
+        the presentation is layered, the words are brilliant, and the expression
+        is deep thinking. The theme revolves around "history, life, detachment",
+        and the overall emotional tendency is quiet and philosophical.
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Su Shi Poetic Style Visualization</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    body { font-family: sans-serif; display: flex; margin: 0; }
+    #menu {
+      width: 200px; background: #fcf7e7; padding: 20px;
+      border-right: 1px solid #97A165;
+    }
+    #menu button {
+      display: block;
+      width: 100%;
+      margin-bottom: 10px;
+      padding: 10px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    /* .main{
+        margin: auto;
+    } */
+    #chart-container {
+      /* flex: 1;  */
+      padding: 40px;
+      background-color: #fcf7e7;
+      color: #97A165;
+      /* margin: auto; */
+    }
+    button{
+        background-color: #eee4ca;
+    }
+  </style>
+</head>
+<body>
+
+
+
+<div id="menu">
+  <h3>Life Phases</h3>
+  <button onclick="updateChart('early')">Early Years</button>
+  <button onclick="updateChart('peak')">Political Peak</button>
+  <button onclick="updateChart('huangzhou')">Exile in Huangzhou</button>
+  <button onclick="updateChart('late')">Later Years</button>
+</div>
+
+<div id="chart-container">
+  <canvas id="radarChart" width="500px" height="500px"></canvas>
+
+</div>
+
+<script>
+  const styleData = {
+    early: {
+      label: "Early Years (1037–1067)",
+      data: [5, 2, 3, 4, 2]
+    },
+    peak: {
+      label: "Political Peak (1068–1079)",
+      data: [4, 5, 4, 3, 2]
+    },
+    huangzhou: {
+      label: "Exile in Huangzhou (1080–1086)",
+      data: [3, 3, 5, 5, 3]
+    },
+    late: {
+      label: "Later Years (1087–1101)",
+      data: [2, 2, 4, 2, 5]
+    }
+  };
+
+  const labels = ["Rational Thought", "Boldness", "Philosophy", "Emotion", "Tranquility"];
+
+  const ctx = document.getElementById('radarChart').getContext('2d');
+  const chartConfig = {
+    type: 'radar',
+    data: {
+      labels: labels,
+      datasets: [{
+        label: styleData.early.label,
+        data: styleData.early.data,
+        fill: true,
+        backgroundColor: 'rgba(151, 161, 101, 0.4)',
+        borderColor: 'rgba(99, 118, 60, 1)',
+        pointBackgroundColor:'rgba(99, 118, 60, 1)'
+      }]
+    },
+    options: {
+      responsive: true,
+      scales: {
+        r: {
+          min: 0,
+          max: 5,
+          ticks: {
+            stepSize: 1
+          }
+        }
+      }
+    }
+  };
+
+  const radarChart = new Chart(ctx, chartConfig);
+
+  function updateChart(phase) {
+    const newData = styleData[phase];
+    radarChart.data.datasets[0].label = newData.label;
+    radarChart.data.datasets[0].data = newData.data;
+    radarChart.update();
+  }
+</script>
+
+</body>
+</html>

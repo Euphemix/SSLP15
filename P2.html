@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <title>诗歌分析布局</title>
+    <style>
+      body {
+        font-family: "STKaiti", serif;
+        /* background-color: #fefaf1; */
+        padding: 20px;
+      }
+
+      .section {
+        /* border: 2px solid red; */
+        /* border-bottom: 5px solid #63763c;
+        border-radius: 10%; */
+        margin: 10px 0;
+        padding: 10px;
+        /* background-color: #ffb303; */
+        color: rgb(0, 0, 0);
+        text-align: center;
+        font-size: 1.2rem;
+        /* background-color: #8b6f4d; */
+        font-weight: bold;
+        font-family: "Helvetica Neue", Arial, sans-serif;
+      }
+
+      .row {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        align-items: center;
+      }
+
+      .row2 {
+        border-top: 3px solid #63763c;
+        border-bottom: 3px solid #63763c;
+      }
+
+      .row1 .section {
+        flex: 1;
+        /* border: #63763c solid 2px;
+        height: 100%; */
+      }
+      .row .section-a {
+        /* border-bottom: 5px solid #63763c; */
+        border-radius: 20px;
+        /* background-color: #63763c;
+        color: aliceblue; */
+        color: #63763c;
+        /* flex: 1; */
+      } /* 两倍宽度 */
+      .row .section-b {
+        /* flex: 2; */
+        font-size: 1rem;
+        /* border-bottom: 5px solid #63763c; */
+      } /* 一倍宽度 */
+      .row .section-c {
+        /* border-radius: 20px;
+        background-color: #63763c;
+        color: aliceblue; */
+        /* flex: 2; */
+        color: #63763c;
+        font-size: 1.2rem;
+      } /* 一倍宽度 */
+
+      .row3 {
+        border-bottom: #4b7f8b solid 4px;
+      }
+
+      .section-d {
+        border-radius: 20px;
+        background-color: #dcbbbb;
+        /* color: #4B7F8B; */
+        padding: 20px;
+        margin: 20px;
+        font-size: 1.5rem;
+      }
+
+      .section-g {
+        font-size: 1rem;
+      }
+
+      .row1 {
+        /* border:2px solid #63763c; */
+        background-color: #eee4ca;
+        padding: 10px;
+        margin-bottom: 20px;
+        border-radius: 20px;
+      }
+
+      /* .row1 img{
+        width: 620px;
+       } */
+
+      .title {
+        font-size: 2rem;
+        font-weight: bold;
+        color: black;
+      }
+
+      .subtitle {
+        font-size: 1.5rem;
+        /* color: red; */
+        margin-bottom: 20px;
+      }
+
+      .area-title {
+        padding: 5px;
+        border-radius: 6px;
+        color: white;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="row row2">
+      <div class="section section-a">
+        Mizhou <br />
+        （Now Shandong Province）
+      </div>
+      <div class="section section-b">
+        During 1068–1079, Su Shi achieved political success, holding positions
+        like magistrate. Meanwhile, he reached a literary peak, creating many
+        masterpieces.
+      </div>
+      <div class="section section-c">
+        Be concerned about the country and the people.
+      </div>
+    </div>
+
+    <div class="section section-d">
+      Poetry style: Bold and unrestrained; Satire and lyricism coexist.
+    </div>
+
+    <div class="row1">
+      <div class="row row3">
+        <div class="section section-e">
+          《江城子·密州出猎》<br />
+          老夫聊发少年狂，左牵黄，右擎苍，锦帽貂裘，千骑卷平冈。<br />
+          为报倾城随太守，亲射虎，看孙郎。<br />
+          酒酣胸胆尚开张。鬓微霜，又何妨？<br />
+          持节云中，何日遣冯唐？<br />
+          会挽雕弓如满月，西北望，射天狼。
+        </div>
+        <div class="section section-f">
+          <i>Jiangchengzi: On a Hunting Excursion in Mizhou</i> <br />
+          <br />
+          Rejuvenated, I my fiery zeal display; Of left hand leash, a yellow
+          hound, On right hand wrist, a falcon grey. A thousand silk-capped,
+          sable-coated horsemen sweep Across the rising ground And hillocks
+          steep.<br />
+          Townspeople pour out of the city gate To watch the tiger-hunting
+          magistrate.<br />
+
+          Heart gladdened with strong wine, who cares About a few new-frosted
+          hairs?<br />
+          When will the court imperial send An envoy to recall the exile? Then
+          I'll bend<br />
+          My bow like a full moon, and aiming northwest, I Will shoot down the
+          fierce Wolf from the sky.
+        </div>
+        <div class="section section-g">
+          <img style="width: 300px" src="P2_1.jpg" alt="" />
+          <!-- With the concept of being loyal and honest in government as the core, it expresses his idea
+        ls and ambitions at the beginning of his official career.
+         When he wrote this article, he was full of vigor and determi
+         nation to make achievements, reflecting a strong sense of nat
+         ional responsibility.
+          The article is written in an elegant language and with rigoro
+          us logic. It inherits the tradition of Confucian political ess
+          ays and contains profound literary talent and style. 
+          In terms of theme, it emphasizes "benevolent government", "lo
+          yalty" and "the way of governing", and in terms of emotion, i
+          t is full of rationality and faith, showing the uprightness an
+          d rationality in Su Shi's early personality. -->
+        </div>
+      </div>
+      <div class="section section-g">
+        Despite being demoted, Su Shi remained passionate and courageous.
+        Although his official career was not smooth, he achieved something in
+        the political arena. This poem was his first time to write a poem and
+        write a preface himself, which is a pity for his vigorous and inspiring
+        feelings. His creative state of mind is manifested as follows: despite
+        being demoted, he remains generous and high-spirited, and his heart is
+        still full of strength. In terms of art, the allusions are natural and
+        the words are vigorous, reflecting a vigorous and bright masculine
+        style. The theme revolves around "national style, ambition and passion",
+        and the overall emotional tendency is passionate and confident.
+      </div>
+    </div>
+
+    <div class="row1">
+      <div class="row row3">
+        <div class="section section-e">
+          《水调歌头·明月几时有》<br />
+          明月几时有？把酒问青天。<br />
+          不知天上宫阙，今夕是何年？<br />
+          我欲乘风归去，唯恐琼楼玉宇，高处不胜寒。<br />
+          起舞弄清影，何似在人间？<br />
+          转朱阁，低绮户，照无眠。<br />
+          不应有恨，何事长向别时圆？<br />
+          人有悲欢离合，月有阴晴圆缺，此事古难全。<br />
+          但愿人长久，千里共婵娟。
+        </div>
+        <div class="section section-f">
+          <i>Prelude to Water Melody: When Will the Moon Be Clear and Bright?</i
+          ><br />
+          <br />
+          How long will the full moon appear? Wine cup in hand, I ask the
+          sky.<br />
+          I do not know what time of year, It would be tonight in the palace on
+          high.<br />
+          Riding the wind, there I would fly, Yet I'm afraid the crystalline
+          palace would be, Too high and cold for me.<br />
+          I rise and dance, with my shadow I play. On high as on earth, would it
+          be as gay?<br />
+
+          The moon goes round the red mansion, Stoops to silk-pad doors, Shines
+          on those who sleepless lie.<br />
+          Why does the moon, bright and round, Shine on our parting, reunion
+          deny?<br />
+          Men have sorrow and joy; they part or meet again; The moon is bright
+          or dim and she may wax or wane. There has been nothing perfect since
+          the olden days.<br />
+          So let us wish that we may live long, Though miles apart, we'll share
+          the beauty she displays.
+        </div>
+        <div class="section section-g">
+          <img style="width: 300px" src="P2_2.png" alt="" />
+        </div>
+      </div>
+      <div class="section section-g">
+        This poem was composed on the Mid-Autumn night of 1076. Su Shi was
+        serving in Mizhou and missed his younger brother Su Zhe. Under the
+        moonlight, he lamented the vicissitudes of the world. His creative state
+        of mind is manifested as follows: Despite the setbacks in his official
+        career, his will has not waned, and he conveys his emotions and
+        yearning. In terms of art, it integrates the beauty of prose and poetry,
+        expresses emotions through the depiction of scenery, and is rich in
+        philosophical sentiments. The theme centers around "Mid-Autumn Festival,
+        family affection, and Life Insights", with an overall emotional
+        inclination towards contemplation and warmth.
+      </div>
+    </div>
+  </body>
+</html>

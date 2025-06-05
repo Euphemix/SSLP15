@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Exploring Su Shi: The Interweaving of Poetry and Life</title>
+    <link
+      href="https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>
+
+    <style>
+      /* body */
+
+      body {
+        background-color: #fcf7e7;
+        margin: 0;
+      }
+
+      /* navbar */
+
+      .navbar {
+        background-color: #63763c;
+        color: #fcf7e7;
+        padding: 0.8rem 1.5rem;
+        /* font-family: Georgia, serif; */
+        /* border-bottom: 2px solid #a1887f; */
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+      }
+
+      .nav-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 96%;
+        margin: 0 auto;
+      }
+
+      .nav-logo {
+        font-size: 1.4rem;
+        font-weight: bold;
+        color: #ffffff;
+      }
+
+      .nav-links {
+        list-style: none;
+        display: flex;
+        gap: 1.5rem;
+        margin: 0;
+        padding: 0;
+      }
+
+      .nav-links a {
+        text-decoration: none;
+        color: #fcf7e7;
+        font-weight: bold;
+        transition: color 0.2s ease;
+      }
+
+      .nav-links a:hover {
+        color: #a0b27a;
+      }
+
+      /* mian */
+      #timeline-embed {
+        background-color: #fcf7e7;
+        margin: 0;
+      }
+
+      .tl-storyslider {
+        background-color: #fcf7e7;
+        margin: 0;
+      }
+
+      .tl-slider-container-mask {
+        background-color: #fcf7e7;
+        margin: 0;
+      }
+
+      /* 时间轴 */
+
+      .tl-timenav {
+        background-color: #97a165;
+        margin: 0;
+      }
+
+      .tl-timenav-slider {
+        background-color: #97a165;
+      }
+
+      .tl-timeaxis-background {
+        background-color: #63763c;
+      }
+
+      /* .tl-timemarker-timespan {
+        background-color: #ffc800;
+      } */
+
+      .tl-timemarker .tl-timemarker-content-container {
+        background-color: #fcf7e7;
+      }
+
+      .tl-timemarker
+        .tl-timemarker-content-container
+        .tl-timemarker-content
+        .tl-timemarker-text
+        h2.tl-headline,
+      .tl-timemarker
+        .tl-timemarker-content-container
+        .tl-timemarker-content
+        .tl-timemarker-text
+        h2.tl-headline
+        p {
+        line-height: 20px;
+        color: #63763c;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: "Helvetica Neue", Arial, sans-serif;
+      }
+
+      .tl-slide-text-only
+        .tl-slide-content-container
+        .tl-slide-content
+        .tl-text {
+        max-width: 99.99%;
+        width: 99.99%;
+        /* display: flex; */
+        padding: 0;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 30px;
+      }
+
+      .tl-slide .tl-slide-scrollable-container {
+        width: 100%;
+      }
+
+      .tl-timeline h1,
+      .tl-timeline h2,
+      .tl-timeline h3,
+      .tl-timeline h4,
+      .tl-timeline h5,
+      .tl-timeline h6 {
+        color: #4b7f8b;
+      }
+
+      /* .tl-slider-container-mask{
+        height: 1000px;
+      } */
+    </style>
+  </head>
+  <body>
+    <div><img src="logo.png" alt="" style="width: 100%" /></div>
+
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo"></div>
+        <ul class="nav-links">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="ABOUTUS.html">ABOUTUS</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div id="timeline-embed" style="width: 100%; height: 700px"></div>
+    <script>
+      fetch("SStimeline.json")
+        .then((response) => response.json())
+        .then((jsonData) => {
+          window.timeline = new TL.Timeline("timeline-embed", jsonData, {
+            language: "zh",
+            initial_zoom: 3,
+          });
+        });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <title>诗歌分析布局</title>
+    <style>
+      body {
+        font-family: "STKaiti", serif;
+        /* background-color: #fefaf1; */
+        padding: 20px;
+      }
+
+      .section {
+        /* border: 2px solid red; */
+        /* border-bottom: 5px solid #63763c;
+        border-radius: 10%; */
+        margin: 10px 0;
+        padding: 10px;
+        /* background-color: #ffb303; */
+        color: rgb(0, 0, 0);
+        text-align: center;
+        font-size: 1.2rem;
+        /* background-color: #8b6f4d; */
+        font-weight: bold;
+        font-family: "Helvetica Neue", Arial, sans-serif;
+      }
+
+      .row {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        align-items: center;
+      }
+
+      .row2 {
+        border-top: 3px solid #63763c;
+        border-bottom: 3px solid #63763c;
+      }
+
+      .row1 .section {
+        flex: 1;
+        /* border: #63763c solid 2px;
+        height: 100%; */
+      }
+      .row .section-a {
+        /* border-bottom: 5px solid #63763c; */
+        border-radius: 20px;
+        /* background-color: #63763c;
+        color: aliceblue; */
+        color: #63763c;
+        /* flex: 1; */
+      } /* 两倍宽度 */
+      .row .section-b {
+        /* flex: 2; */
+        font-size: 1rem;
+        /* border-bottom: 5px solid #63763c; */
+      } /* 一倍宽度 */
+      .row .section-c {
+        /* border-radius: 20px;
+        background-color: #63763c;
+        color: aliceblue; */
+        /* flex: 2; */
+        color: #63763c;
+        font-size: 1.2rem;
+      } /* 一倍宽度 */
+
+      .row3 {
+        border-bottom: #4b7f8b solid 4px;
+      }
+
+      .section-d {
+        border-radius: 20px;
+        background-color: #dcbbbb;
+        /* color: #4B7F8B; */
+        padding: 20px;
+        margin: 20px;
+        font-size: 1.5rem;
+      }
+
+      .section-g {
+        font-size: 1rem;
+      }
+
+      .row1 {
+        /* border:2px solid #63763c; */
+        background-color: #eee4ca;
+        padding: 10px;
+        margin-bottom: 20px;
+        border-radius: 20px;
+      }
+
+      /* .row1 img{
+        width: 620px;
+       } */
+
+      .title {
+        font-size: 2rem;
+        font-weight: bold;
+        color: black;
+      }
+
+      .subtitle {
+        font-size: 1.5rem;
+        /* color: red; */
+        margin-bottom: 20px;
+      }
+
+      .area-title {
+        padding: 5px;
+        border-radius: 6px;
+        color: white;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="row row2">
+      <div class="section section-a">HANGZHOU</div>
+      <div class="section section-b">
+        In his later years, Su Shi was first re-employed by the court and held
+        an important official position, but was later demoted to the south due
+        to political struggles. When he was in Hangzhou, he cared about the
+        people and built the famous Su Causeway.
+      </div>
+      <div class="section section-c">
+        Unfulfilled ambitions; youthful ideals; life reflections
+      </div>
+    </div>
+
+    <div class="section section-d">
+      Be detached and free; care about people's livelihood.
+    </div>
+
+    <div class="row1">
+      <div class="row row3">
+        <div class="section section-e">
+          《赠刘景文》<br />
+          荷尽已无擎雨盖，<br />
+          菊残犹有傲霜枝。<br />
+          一年好景君须记，<br />
+          最是橙黄橘绿时。
+        </div>
+        <div class="section section-f">
+          <i>Presented to Liu Jingwen</i><br /><br />
+          The lotus has faded, no more leaves to hold the rain,<br />
+          Chrysanthemums linger, proud in frost’s domain.<br />
+          Remember, the best scenes of the year, I say,<br />
+          Are when oranges turn yellow and tangerines green in day.<br />
+        </div>
+        <div class="section section-g">
+          <img style="width: 350px" src="P4_1.jpg" alt="" />
+        </div>
+      </div>
+      <div class="section section-g">
+        Su Shi created "Presented to Liu Jingwen", a poem he gave to his friend
+        when he was exiled to Huangzhou, describing the scenery of the four
+        seasons and his life interests. His creative mood is: appreciating
+        nature and the four seasons, being peaceful, and integrating into the
+        mountains and rivers. In terms of art, the text is concise and vivid,
+        rich in painting ideas, and the language is novel and agile. The theme
+        revolves around "philosophy, life realm, and tolerance", and the overall
+        emotional tendency is appreciation and peace.
+      </div>
+    </div>
+
+    <div class="row1">
+      <div class="row row3">
+        <div class="section section-e">
+          《次湖上初晴后雨二首·其二》<br />
+          水光潋滟晴方好，<br />
+          山色空蒙雨亦奇。<br />
+          欲把西湖比西子，<br />
+          淡妆浓抹总相宜。
+        </div>
+        <div class="section section-f">
+          <i>After a Rain at West Lake <br />(2nd Poem of Two)</i><br /><br />
+          The shimmering lake, a delight on sunny days,<br />
+          The misty mountains, a wonder in the rain.<br />
+          If I compare West Lake to the fair Lady Xi,<br />
+          She’s charming richly adorned or plainly plain.
+        </div>
+        <div class="section section-g">
+          <img style="width: 350px" src="P4_2.png" alt="" />
+        </div>
+      </div>
+      <div class="section section-g">
+        Su Shi created "After a Rain at West Lake (2nd Poem of Two)" was written
+        when Su Shi was working in Hangzhou. It expresses his feelings by
+        describing the scenery, and reconciles government affairs and leisure.
+        His creative mood is: living in the official residence, returning to the
+        peaceful and carefree nature in the poetic indifference. In terms of
+        art, it is based on freshness, natural language, and fresh and lively
+        poetry. The theme revolves around "mountains and rivers, beauty
+        comparison, and leisure", and the overall emotional tendency is calm and
+        leisure.
+      </div>
+    </div>
+  </body>
+</html>

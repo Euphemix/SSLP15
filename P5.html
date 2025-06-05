@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <title>诗歌分析布局</title>
+    <style>
+      body {
+        font-family: "STKaiti", serif;
+        /* background-color: #fefaf1; */
+        padding: 20px;
+      }
+
+      .section {
+        /* border: 2px solid red; */
+        /* border-bottom: 5px solid #63763c;
+        border-radius: 10%; */
+        margin: 10px 0;
+        padding: 10px;
+        /* background-color: #ffb303; */
+        color: rgb(0, 0, 0);
+        text-align: center;
+        font-size: 1.2rem;
+        /* background-color: #8b6f4d; */
+        font-weight: bold;
+        font-family: "Helvetica Neue", Arial, sans-serif;
+      }
+
+      .row {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        align-items: center;
+      }
+
+      .row2 {
+        border-top: 3px solid #63763c;
+        border-bottom: 3px solid #63763c;
+      }
+
+      .row1 .section {
+        flex: 1;
+        /* border: #63763c solid 2px;
+        height: 100%; */
+      }
+      .row .section-a {
+        /* border-bottom: 5px solid #63763c; */
+        border-radius: 20px;
+        /* background-color: #63763c;
+        color: aliceblue; */
+        color: #63763c;
+        /* flex: 1; */
+      } /* 两倍宽度 */
+      .row .section-b {
+        /* flex: 2; */
+        font-size: 1rem;
+        /* border-bottom: 5px solid #63763c; */
+      } /* 一倍宽度 */
+      .row .section-c {
+        /* border-radius: 20px;
+        background-color: #63763c;
+        color: aliceblue; */
+        /* flex: 2; */
+        color: #63763c;
+        font-size: 1.2rem;
+      } /* 一倍宽度 */
+
+      .row3 {
+        border-bottom: #4b7f8b solid 4px;
+      }
+
+      .section-d {
+        border-radius: 20px;
+        background-color: #dcbbbb;
+        /* color: #4B7F8B; */
+        padding: 20px;
+        margin: 20px;
+        font-size: 1.5rem;
+      }
+
+      .section-g {
+        font-size: 1rem;
+      }
+
+      .row1 {
+        /* border:2px solid #63763c; */
+        background-color: #eee4ca;
+        padding: 10px;
+        margin-bottom: 20px;
+        border-radius: 20px;
+      }
+
+      /* .row1 img{
+        width: 620px;
+       } */
+
+      .title {
+        font-size: 2rem;
+        font-weight: bold;
+        color: black;
+      }
+
+      .subtitle {
+        font-size: 1.5rem;
+        /* color: red; */
+        margin-bottom: 20px;
+      }
+
+      .area-title {
+        padding: 5px;
+        border-radius: 6px;
+        color: white;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="row row2">
+      <div class="section section-a">CHANGZHOU</div>
+      <div class="section section-b">
+        He died of illness shortly after reuniting with Su Che, at the age of
+        64.
+      </div>
+      <div class="section section-c">
+        Accept it calmly and be calm and composed.
+      </div>
+    </div>
+    <div class="section section-d">
+      Feel the affection of family, and feel peaceful and calm.
+    </div>
+    <div class="row1">
+      <div class="row row3">
+        <div class="section section-e">
+          《六月二十日夜渡海》<br /><br />参横斗转欲三更，苦雨终风也解晴。<br />云散月明谁点缀？天容海色本澄清。<br />空余鲁叟乘桴意，粗识轩辕奏乐声。<br />九死南荒吾不恨，兹游奇绝冠平生。
+        </div>
+        <div class="section section-f">
+          <i
+            >Crossing the Sea by Night on the Twentieth Day of the Sixth
+            Month</i
+          ><br /><br />
+          The Big Dipper is turning and it is almost three o'clock in the
+          morning.The bitter rain finally ends and the wind clears up.<br />Who
+          will adorn the bright moon when the clouds disperse?The sky and the
+          sea are originally clear.<br />The old man from Lu is left with the
+          idea of riding a raft.I roughly recognize the music played by
+          Xuanyuan.<br />I don't regret dying in the southern wilderness.This
+          trip is the most amazing one in my life.
+        </div>
+        <div class="section section-g">
+          <img style="width: 350px" src="P5_1.png" alt="" />
+        </div>
+      </div>
+      <div class="section section-g">
+        This poem captures the sense of adventure and reflection during a sea
+        voyage, set against the backdrop of nature’s vastness and mystery. The
+        journey is symbolic of life's uncertainties and the courage required to
+        face them. The poet reflects on his willingness to face death without
+        regret, finding peace in the adventure itself rather than in the
+        destination.
+      </div>
+    </div>
+  </body>
+</html>

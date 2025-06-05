@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <title>诗歌分析布局</title>
+    <style>
+      body {
+        font-family: "STKaiti", serif;
+        /* background-color: #fefaf1; */
+        padding: 20px;
+      }
+
+      .section {
+        /* border: 2px solid red; */
+        /* border-bottom: 5px solid #63763c;
+        border-radius: 10%; */
+        margin: 10px 0;
+        padding: 10px;
+        /* background-color: #ffb303; */
+        color: rgb(0, 0, 0);
+        text-align: center;
+        font-size: 1.2rem;
+        /* background-color: #8b6f4d; */
+        font-weight: bold;
+        font-family: "Helvetica Neue", Arial, sans-serif;
+      }
+
+      .row {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        align-items: center;
+      }
+
+      .row2 {
+        border-top: 3px solid #63763c;
+        border-bottom: 3px solid #63763c;
+      }
+
+      .row1 .section {
+        flex: 1;
+        /* border: #63763c solid 2px;
+        height: 100%; */
+      }
+      .row .section-a {
+        /* border-bottom: 5px solid #63763c; */
+        border-radius: 20px;
+        /* background-color: #63763c;
+        color: aliceblue; */
+        color: #63763c;
+        /* flex: 1; */
+      } /* 两倍宽度 */
+      .row .section-b {
+        /* flex: 2; */
+        font-size: 1rem;
+        /* border-bottom: 5px solid #63763c; */
+      } /* 一倍宽度 */
+      .row .section-c {
+        /* border-radius: 20px;
+        background-color: #63763c;
+        color: aliceblue; */
+        /* flex: 2; */
+        color: #63763c;
+        font-size: 1.2rem;
+      } /* 一倍宽度 */
+
+      .row3 {
+        border-bottom: #4b7f8b solid 4px;
+      }
+
+      .section-d {
+        border-radius: 20px;
+        background-color: #dcbbbb;
+        /* color: #4B7F8B; */
+        padding: 20px;
+        margin: 20px;
+        font-size: 1.5rem;
+      }
+
+      .section-g {
+        font-size: 1rem;
+      }
+
+      .row1 {
+        /* border:2px solid #63763c; */
+        background-color: #eee4ca;
+        padding: 10px;
+        margin-bottom: 20px;
+        border-radius: 20px;
+      }
+
+      /* .row1 img{
+        width: 620px;
+       } */
+
+      .title {
+        font-size: 2rem;
+        font-weight: bold;
+        color: black;
+      }
+
+      .subtitle {
+        font-size: 1.5rem;
+        /* color: red; */
+        margin-bottom: 20px;
+      }
+
+      .area-title {
+        padding: 5px;
+        border-radius: 6px;
+        color: white;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="row row2">
+      <div class="section section-a">SICHUAN</div>
+      <div class="section section-b">
+        Born in 1037; passed the imperial examination in 1057; served as a judge
+        in Fengxiang Prefecture; mourned the death of his father in 1061; had a
+        long family tradition of learning.
+      </div>
+      <div class="section section-c">
+        Unfulfilled ambitions; youthful ideals; life reflections
+      </div>
+    </div>
+
+    <div class="section section-d">
+      Poetry style: Fresh and handsome, high-spirited; idealistic, natural
+      language
+    </div>
+
+    <div class="row1">
+      <div class="row row3">
+        <div class="section section-e">
+          《刑赏忠厚之至论》<br />
+          立法贵严，<br />而责人贵宽。
+        </div>
+        <div class="section section-f">
+          <i
+            >On the Ultimate Principle of Justice through Leniency in Punishment
+            and Generosity in Reward</i
+          ><br /><br />
+          In establishing laws, strictness is valued; <br />in holding people
+          accountable, leniency is esteemed.
+        </div>
+        <div class="section section-g">
+          <img style="width: 350px" src="P1_1.jpg" alt="" />
+        </div>
+      </div>
+      <div class="section section-g">
+        With the concept of being loyal and honest in government as the core, it
+        expresses his idea ls and ambitions at the beginning of his official
+        career. When he wrote this article, he was full of vigor and determi
+        nation to make achievements, reflecting a strong sense of nat ional
+        responsibility. The article is written in an elegant language and with
+        rigoro us logic. It inherits the tradition of Confucian political ess
+        ays and contains profound literary talent and style. In terms of theme,
+        it emphasizes "benevolent government", "lo yalty" and "the way of
+        governing", and in terms of emotion, i t is full of rationality and
+        faith, showing the uprightness an d rationality in Su Shi's early
+        personality.
+      </div>
+    </div>
+
+    <div class="row1">
+      <div class="row row3">
+        <div class="section section-e">
+          《和子由渑池怀旧》<br />
+          人生到处知何似？应似飞鸿踏雪泥。<br />
+          泥上偶然留指爪，鸿飞那复计东西。<br />
+          老僧已死成新塔，坏壁无由见旧题。<br />
+          往日崎岖还记否？路长人困蹇驴嘶。
+        </div>
+        <div class="section section-f">
+          <i>Reminiscing in Mianchi with My Brother Ziyou</i><br /><br />
+          What is life like wherever we go? Like a wild goose stepping on
+          snow.<br />
+          In the mud, claws leave fleeting tracks— Once flown, who cares to turn
+          back?<br />
+          The old monk’s tomb stands new and high, The ruined wall hides past
+          marks, nigh.<br />
+          Do you still recall the rugged ways? A tired mule brays through
+          lengthening days.
+        </div>
+        <div class="section section-g">
+          <img style="width: 350px" src="P1_2.jpg" alt="" />
+        </div>
+      </div>
+      <div class="section section-g">
+        During the period of "studying and entering official career
+        (1037–1067)", Su Shi created " Reminiscence of Mianchi with Ziyou".
+        After meeting his brother Su Zhe again after many years, Su Shi
+        expressed his deep feelings for the old friendship and the impermanence
+        of life. His creative mood is as follows: he is grateful for family
+        affection, and he uses memories of the past to express his sorrow and
+        the impermanence of life. . In terms of art, the emotions are deep, the
+        scenes are deep, and the "dream" and nostalgic emotions are used to
+        enhance the lyrical appeal. The theme revolves around "nostalgia,
+        emotions, and the impermanence of life", and the overall emotional
+        tendency is nostalgia and sentimentality.
+      </div>
+    </div>
+  </body>
+</html>
